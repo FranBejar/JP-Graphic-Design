@@ -1,0 +1,243 @@
+* {
+    margin: 0px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    font-size: 30pt;
+    padding: 10px;
+}
+
+.active {
+    background-color: #ced4da;
+}
+
+nav {
+    background-color: #6c757d;
+    position: fixed;
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: 45px;
+}
+
+.companylogo {
+    float: left;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    display: block;
+    padding: 13px 30px;
+    border-radius: 4px;
+}
+
+.menu a:hover {
+    background-color: #343a40;
+    color: white;
+}
+
+nav img {
+    width: 250px;
+    height: 40px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    margin-top: 2px;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+}
+
+.featured-design {
+    margin-top: 45px;
+    padding: 10px;
+}
+
+.featured-design img {
+    width: 250px;
+    height: 250px;
+    padding: 13px;
+    border-radius: 40px;
+}
+
+.worked-us {
+    background-color: #6c757d;
+    color: black;
+    padding: 5px;
+}
+
+.worked-us img {
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.about-us {
+    margin-top: 45px;
+    margin-left: 22%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 13px 30px;
+}
+
+.about-us p {
+    padding: 12px;
+}
+
+.our-services {
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.service {
+    width: 50%;
+    margin: 0 auto;
+    padding: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: .5s;
+}
+
+.our-services img {
+    width: 150px;
+    height: 150px;
+}
+
+.service:hover {
+    background-color: #ced4da;
+    border-radius: 25px;
+    color: black;
+    transition: .5s;
+}
+
+.description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 13px 13px;
+}
+
+.designs {
+    margin-top: 45px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-areas:
+        'photo4 photo4 photo2 photo2'
+        'photo4 photo4 photo3 photo1';
+    grid-template-columns: repeat(6, auto);
+    align-content: stretch;
+    gap: 10px;
+    padding: 0.5vw;
+    transition: 1.5s;
+    /* Le aplica un efecto donde las imagenes aparecen y empiezan a achicarse hasta la posicion final */
+}
+
+.gallery div img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo1 {
+    grid-area: photo1;
+}
+
+.photo2 {
+    grid-area: photo2;
+}
+
+.photo3 {
+    grid-area: photo3;
+}
+
+.photo4 {
+    grid-area: photo4;
+}
+
+.forms {
+    margin-top: 45px;
+    min-height: 53.3vh;
+    display: block;
+}
+
+.forms div {
+    padding: 10px;
+}
+
+footer {
+    background-color: #343a40;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .iframe {
+    float: left;
+    margin: 10px;
+}
+
+footer .endpage {
+    float: right;
+    margin: 10px;
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.footmenu {
+    padding: 10px;
+}
+
+.footmenu a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    height: 20px;
+}
+
+.footmenu a:hover {
+    background-color: #ced4da;
+    color: black;
+}
+
+footer img {
+    width: 25%;
+    height: 25%;
+}
