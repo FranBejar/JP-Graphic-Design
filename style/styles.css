@@ -20,6 +20,7 @@ nav {
     top: 0;
     width: 100%;
     height: 45px;
+    z-index: 5;
 }
 
 .companylogo {
@@ -95,6 +96,14 @@ body {
     padding: 10px;
     width: 100px;
     height: 100px;
+    transition: .5s;
+}
+
+.worked-us img:hover{
+    padding: 10px;
+    width: 125px;
+    height: 125px;
+    transition: .5s;
 }
 
 .about-us {
@@ -113,6 +122,7 @@ body {
 .our-services {
     margin-top: 30px;
     padding: 20px;
+    transition: 1s;
 }
 
 .service {
@@ -169,28 +179,73 @@ body {
 
 .photo1 {
     grid-area: photo1;
+    position: relative;
 }
 
 .photo2 {
     grid-area: photo2;
+    position: relative;
 }
 
 .photo3 {
     grid-area: photo3;
+    position: relative;
 }
 
 .photo4 {
     grid-area: photo4;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+
+.photo1:hover .overlay {
+    opacity: 0.75;
+}
+
+.photo2:hover .overlay {
+    opacity: 0.75;
+}
+
+.photo3:hover .overlay {
+    opacity: 0.75;
+}
+
+.photo4:hover .overlay {
+    opacity: 0.75;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 .forms {
     margin-top: 45px;
     min-height: 53.3vh;
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 .forms div {
     padding: 10px;
+    flex-direction: column;
 }
 
 footer {
