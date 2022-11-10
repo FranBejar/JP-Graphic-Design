@@ -1,0 +1,19 @@
+.forms {
+    margin-top: 45px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+
+    div {
+        padding: 10px;
+        @include flex-column;
+    }
+}
+
+.iframe {
+    margin: 10px;
+
+    h2 {
+        padding-bottom: 1.5%;
+    }
+}

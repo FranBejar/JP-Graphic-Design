@@ -1,0 +1,46 @@
+.our-services {
+    margin-top: 30px;
+    padding: 20px;
+    transition: 1s;
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.service {
+    @include services;
+    @include flex-row;
+    margin-left: 17.5%;
+    transition: .5s;
+
+    &:hover {
+        background-color: $lightgrey;
+        border-radius: 25px;
+        color: $black;
+        transition: .5s;
+    }
+}
+
+.serviceI {
+    float: right;
+    @include services;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 17.5%;
+    transition: .5s;
+
+    &:hover {
+        background-color: $lightgrey;
+        border-radius: 25px;
+        color: $black;
+        transition: .5s;
+    }
+}
+
+.description {
+    width: 50%;
+    @include flex-column;
+    padding: 13px 13px;
+}

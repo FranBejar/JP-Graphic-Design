@@ -1,0 +1,183 @@
+@media screen and (max-width:834px) {
+    nav {
+        @include flex-column;
+    }
+
+    .menu {
+        a {
+            padding: 10px 20px;
+            border-radius: 4px;
+        }
+    }
+
+    .featured-design {
+        margin-top: 70px;
+    }
+
+    .about-us {
+        margin-top: 70px;
+    }
+
+    .our-services {
+        margin-top: 70px;
+    }
+
+    .service {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .serviceI {
+        margin: 0 auto;
+        float: unset;
+        justify-content: center;
+    }
+
+    .designs {
+        margin-top: 80px;
+    }
+
+    .gallery {
+        @include flex-column;
+
+        div {
+            img {
+                width: 75%;
+                height: 75%;
+            }
+        }
+    }
+
+    .forms {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width:725px) {
+    .service {
+        width: 75%;
+    }
+
+    .serviceI {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:484px) {
+    nav {
+        position: unset;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .featured-design {
+        margin-top: unset;
+    }
+
+    .about-us {
+        margin-top: unset;
+        margin-left: 17.5%;
+
+        p {
+            padding: 5px;
+        }
+    }
+
+    .our-services {
+        margin-top: unset;
+    }
+
+    .service {
+        @include services-responsive;
+    }
+
+    .serviceI {
+        @include services-responsive;
+    }
+
+    .designs {
+        margin-top: unset;
+    }
+
+    .forms {
+        margin-top: unset;
+    }
+
+    .iframe {
+        iframe {
+            width: 75%;
+        }
+    }
+}
+
+@media screen and (max-width:320px) {
+    h1 {
+        font-size: 25pt;
+        padding: 10px;
+    }
+
+    nav {
+        img {
+            width: 80%;
+            height: 30%;
+        }
+    }
+
+
+    .worked-us {
+        img {
+            padding: 10px;
+            width: 30%;
+            height: 30%;
+            transition: .5s;
+
+            &:hover {
+                padding: 10px;
+                width: 35%;
+                height: 35%;
+                transition: .5s;
+            }
+        }
+    }
+
+    .featured-design {
+        img {
+            width: 75%;
+            height: 75%;
+            padding: 4%;
+            border-radius: 40px;
+        }
+    }
+
+    footer {
+        img {
+            min-width: 100px;
+            width: 80%;
+            min-height: 50px;
+            height: 80%;
+        }
+    }
+
+    .social-media {
+        img {
+            min-width: 40px;
+            min-height: 40px;
+            margin: 5px;
+        }
+    }
+
+    .contact {
+        textarea {
+            size-adjust: 75%;
+        }
+    }
+}
+
+@media screen and (max-width:249px) {
+    .social-media {
+        @include flex-column;
+        justify-content: center;
+    }
+}

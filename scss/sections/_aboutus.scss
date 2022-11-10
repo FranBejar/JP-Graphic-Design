@@ -1,0 +1,12 @@
+.about-us {
+    margin-top: 45px;
+    margin-left: 22%;
+    width: 50%;
+    @include flex-column;
+    padding: 13px 30px;
+
+    p {
+        padding: 2.3%;
+        font-size: 13pt;
+    }
+}

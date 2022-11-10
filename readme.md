@@ -1,20 +1,13 @@
-PreEntrega2 - Bejar Francisco
+PreEntrega3 - Bejar Francisco
 
 Proyecto JP Graphic Design
 Pagina para un estudio de diseño grafico
 
-En esta preentrega se pedia hacer responsivos 2 de los archivos HTML, de los cuales elegi:
+En esta preentrega ya las 5 secciones son responsivas
 
-    -index.html
-    -services.html
+Empeze a utilizar SASS en lugar de CSS, dividiendo el SASS en distintas carpetas que dividen el estilo final de cada seccion y de las partes compartidas (como el nav y el footer)
 
-Ademas hice responsivos el nav bar y el footer, el cual se encuentra en los 5 HTML
+Se inicializo npm y se agregaron las dependencias nodemon y node-sass, asi tambien los scripts de build-css y watch-css
+Esto ultimo agrego los archivos package.json y package-lock.json
 
-Reorganice la galeria usando Grid
-
-Ademas agregue distintas animaciones ademas de los :hover del nav, footer y del services:
-    
-    -Cada imagen de la galeria tiene un hover que muestra un overlay con el nombre del proyecto.
-    -La pagina services.html tiene una transicion de 1 segundo donde se despliega de arriba hacia abajo todos los servicios que ofrece el estudio.
-    -La galeria tambien tiene una leve transicion, donde las imagenes se contraen un poco hacia el centro de la pagina.
-    -En la pagina index.html los logos de las empresas con las que trabajaron (seccion worked-us) tienen un hover donde se agranda el logo del la  empresa.
+Se incluye .gitignore de la carpeta node_modules

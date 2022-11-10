@@ -1,0 +1,21 @@
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin services {
+    width: 50%;
+    padding: 8px;
+}
+
+@mixin services-responsive {
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
