@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    font-size: 30pt;
+    padding: 10px;
+}
+
+.active {
+    background-color: $lightgrey;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    @include flex-column;
+    background-color: $black;
+    color: $white;
+}

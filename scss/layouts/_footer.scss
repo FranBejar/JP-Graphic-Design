@@ -1,0 +1,47 @@
+footer {
+    background-color: $darkgrey;
+    font-weight: bold;
+    color: $white;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto;
+
+    .endpage {
+        margin: 10px;
+    }
+
+    img {
+        width: 300px;
+        height: 100px;
+    }
+}
+
+.footmenu {
+    padding: 10px;
+
+    a {
+        text-decoration: none;
+        display: inline-block;
+        padding: 12px 15px;
+        border-radius: 4px;
+        font-weight: bold;
+        color: $white;
+
+        &:hover {
+            background-color: $lightgrey;
+            color: $black;
+        }
+    }
+}
+
+.social-media {
+    @include flex-row;
+    justify-content: center;
+
+    img {
+        width: 40px;
+        height: 40px;
+        margin: 5px;
+        margin-top: 2px;
+    }
+}

@@ -1,0 +1,15 @@
+@import 'utilities/variables';
+@import 'utilities/mixins';
+
+@import 'base/resets';
+
+@import 'layouts/navbar';
+@import 'layouts/footer';
+
+@import 'sections/index';
+@import 'sections/aboutus';
+@import 'sections/services';
+@import 'sections/designs';
+@import 'sections/contact';
+
+@import 'layouts/mediaquery';

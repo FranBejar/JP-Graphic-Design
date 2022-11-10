@@ -1,0 +1,91 @@
+.designs {
+    margin-top: 45px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-areas:
+        'photo4 photo4 photo2 photo2'
+        'photo4 photo4 photo3 photo1';
+    grid-template-columns: repeat(6, auto);
+    align-content: stretch;
+    gap: 10px;
+    padding: 0.5vw;
+    transition: 1.5s;
+    /* Le aplica un efecto donde las imagenes aparecen y empiezan a achicarse hasta la posicion final */
+
+    div {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: $black;
+}
+
+.photo1 {
+    grid-area: photo1;
+    position: relative;
+
+    &:hover {
+        .overlay {
+            opacity: 0.75;
+        }
+    }
+}
+
+.photo2 {
+    grid-area: photo2;
+    position: relative;
+
+    &:hover {
+        .overlay {
+            opacity: 0.75;
+        }
+    }
+}
+
+.photo3 {
+    grid-area: photo3;
+    position: relative;
+
+    &:hover {
+        .overlay {
+            opacity: 0.75;
+        }
+    }
+}
+
+.photo4 {
+    grid-area: photo4;
+    position: relative;
+
+    &:hover {
+        .overlay {
+            opacity: 0.75;
+        }
+    }
+}
+
+.text {
+    color: $white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
