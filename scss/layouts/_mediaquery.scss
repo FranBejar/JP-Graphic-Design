@@ -103,6 +103,10 @@
 
     .forms {
         margin-top: unset;
+
+        textarea{
+            width: 250px;
+        }
     }
 
     .iframe {
@@ -168,9 +172,13 @@
         }
     }
 
-    .contact {
+    .forms {
+        input{
+            width: 75%;
+        }
+
         textarea {
-            size-adjust: 75%;
+            width: 75%;
         }
     }
 }
